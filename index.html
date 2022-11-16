@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokedex</title>
+    <link rel="stylesheet" href="style/style.css"></link>
+    <link rel="icon" type="image/png" href="img/pokeball-icon.png"/>
+</head>
+<body>
+    <div id="pokedex">
+        <div id="top">
+            <div id="top-bar">
+                <input type="text" id="search" value="Bulbasaur" spellcheck="false" placeholder="Nome" onkeydown="return alphaOnly(event)">
+                <span id="number">#001</span>
+            </div>
+            <div id="poke-image-placeholder">
+                <img src="img/1.png" id="pokemon-image" alt="Pokémon">
+            </div>
+        </div>
+        <div id="data">
+            <div id="types">
+                <span style="background-color: rgb(116, 203, 72) ;" class="type">Grass</span>
+                <span style="background-color: rgb(164, 62, 158);" class="type">Poison</span>
+            </div>
+
+            <h4 id="base-stats" style="color: rgb(116, 203, 72);">Base Stats</h4>
+
+            <div id="stats">
+                <div class="stat-row">
+                    <div class="stat-desc">HP</div>
+                    <div class="stat-number">045</div>
+                    <div class="stat-bar">
+                        <div class="bar-outer">
+                            <div class="bar-inner" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-desc">ATK</div>
+                    <div class="stat-number">049</div>
+                    <div class="stat-bar">
+                        <div class="bar-outer">
+                            <div class="bar-inner" style="width: 49%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-desc">DEF</div>
+                    <div class="stat-number">049</div>
+                    <div class="stat-bar">
+                        <div class="bar-outer">
+                            <div class="bar-inner" style="width: 49%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-desc">SPA</div>
+                    <div class="stat-number">065</div>
+                    <div class="stat-bar">
+                        <div class="bar-outer">
+                            <div class="bar-inner" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-desc">SPD</div>
+                    <div class="stat-number">065</div>
+                    <div class="stat-bar">
+                        <div class="bar-outer">
+                            <div class="bar-inner" style="width: 65%;"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="stat-row">
+                    <div class="stat-desc">SPE</div>
+                    <div class="stat-number">045</div>
+                    <div class="stat-bar">
+                        <div class="bar-outer">
+                            <div class="bar-inner" style="width: 45%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="author">Criado por: Kattryel Rezende</div>
+        </div>
+    </div>
+    <script src="script/script.js"></script>
+    <script>
+        function alphaOnly(event) {
+            let key = event.keyCode;
+            return ((key >= 65 && key <= 90) || key == 8 || key == 32 || key == 13);
+        };
+    </script> 
+</body>
+</html>
