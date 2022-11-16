@@ -14,7 +14,8 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    justify-items: center;
+    height: 100%;
 }
 
 #pokedex {
@@ -24,6 +25,7 @@ body{
     border-radius: 12px;
     padding: 0.3rem;
     transition: background-color 0.5s ease-in-out;
+    margin: 2.8%
 }
 
 #top {
@@ -32,7 +34,7 @@ body{
     background: url('../img/pokeball.png');
     background-repeat: no-repeat;
     background-position: right;
-    background-size: 20rem 22rem;
+    background-size: 20rem 20rem;
 }
 
 #top-bar {
