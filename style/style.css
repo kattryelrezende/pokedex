@@ -19,7 +19,7 @@ body{
 
 #pokedex {
     width: 22rem;
-    height: 36rem;
+    height: 34.5rem;
     background-color: rgb(116, 203, 72);
     border-radius: 8px;
     padding: 0.3rem;
@@ -152,13 +152,6 @@ body{
 
 #base-stats {
     transition:  0.5s ease-in-out;
-}
-
-#author{
-    font-size: 1.2vw;
-    margin-top: 0.5rem;
-    text-align: center;
-    align-self: center;
 }
 
 ::placeholder { 
